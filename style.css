@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: aqua; */
+    border-bottom: 2px solid #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    position: relative;
+}
+.logo img{
+    width: 15vw;
+    height: 10vh;
+
+}
+.nav i {
+    font-size: 1.2vw;
+    font-weight: 800;
+    display: none;
+}
+.list{
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+    justify-content: center;
+}
+.list h4{
+    font-size: 1.2vw;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.list button{
+    font-size: 1.2vw;
+    font-weight: 550;
+    border-radius: 5px;
+    border: 2px solid #FF725C;
+    padding: 10px;
+    background-color: #FF725C;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.list button:hover{
+    background-color: #1A2E35;
+    border: 2px solid #1A2E35;
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.list a{
+        text-decoration: none;
+        color: #1B2E34;
+        
+    
+}
+.content{
+    display: flex;
+    height: calc(100% - 100px);
+    position: relative;
+}
+.text{
+    width: 50%;
+    padding: 6vh 5vw;
+}
+.text span{
+    color: #FF725C;
+}
+.image{
+    width: 50%;
+}
+.text h2{
+    font-size: 2.5vw;
+    font-weight: 800;
+    padding: 2vh 2vw ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text p{
+    font-size: 14px;
+    font-weight: 800;
+    padding: 1vh 2vw;
+    line-height: 4vh;
+    word-spacing: 0.2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#btn {
+    padding: 0.5vh 2vw ;
+    
+
+}
+#btn button{
+    font-size: 1.2vw;
+    font-weight: 550;
+    border-radius: 5px;
+    border: 2px solid #FF725C;
+    padding: 5px;
+    background-color: #FF725C;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#btn button:hover{
+    background-color: #1A2E35;
+    border: 2px solid #1A2E35;
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    background-color: #FF725C;
+    height: 50px;
+    /* position: relative; */
+}
+.footer p {
+    text-align:end;
+    padding: 10px 50px 10px 15px;
+    word-spacing: 5px;
+    font-size: 1.2vw;
+    font-weight: 550;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer a{
+    text-decoration: none;
+    color: #1B2E34;
+}
+
+
+@media (max-width: 600px) {
+    .nav{
+        padding: 0 5vw;
+        height: 60px;
+    }
+    .list h4{
+        display: none;
+    }
+    .list button{
+        display: none;
+    }
+    .list i{
+        display: initial;
+        font-size: 4vw;
+    }
+    .logo img {
+        height: 8vh;
+        width: 9vw;
+    }
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+
+    }
+    .text{
+        width: 100%;
+        height: 45%;
+    }
+    .image{
+        width: 100%;
+        height: 45%;
+    }
+}
